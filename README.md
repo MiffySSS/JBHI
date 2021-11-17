@@ -14,6 +14,27 @@ In this paper, we propose a multi-modal brain tumor segmentation framework that 
 ## Quick Start.
 
 ### Install Dependencies
+
 - python=3.6
 - PyTorch=1.3.1
 - numpy
+- scipy
+- SimpleITK
+
+### Database Preprocessing
+
+```
+cd data && python preprocess_example.py
+```
+
+### Training Demo
+
+```
+python train.py --model multi_modal_seg --dataset brats --backbone resnet50 --lr 1e-2 --epoch 50 --batch-size 16
+```
+
+### Pretrained Models
+
+```
+coming soon...
+```
