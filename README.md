@@ -23,6 +23,7 @@ In this paper, we propose a multi-modal brain tumor segmentation framework that 
 
 ### Database Preprocessing
 
+BraTS dataset must be converted into picture files before training & prediction.
 ```
 cd data && python preprocess_example.py
 ```
@@ -32,6 +33,7 @@ cd data && python preprocess_example.py
 ```
 python train.py --model multi_modal_seg --dataset brats --backbone resnet50 --lr 1e-2 --epoch 50 --batch-size 16
 ```
+For more options, please refer to args_train.py.
 
 ### Pretrained Models
 
